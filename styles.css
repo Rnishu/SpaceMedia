@@ -1,0 +1,40 @@
+.textdiv{
+  z-index:101;
+}
+.phome{
+  z-index:101;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vmin;
+  }
+  
+  .object {
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY( 50vmin );
+  }
+  
+
+ 
+  .planet {
+    z-index: 100;
+  }
+  
+  #sun {
+    z-index: 40;
+    height: 30vmin;
+    width: 30vmin;
+  }
+  #earth {
+    height: 10vmin;
+    width: 10vmin;
+  }
+
+  
