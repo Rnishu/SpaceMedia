@@ -1,66 +1,29 @@
 h1{ 
-    font-family : Arial, Helvetica, sans-serif;
-    color : rgb(87, 44, 3);
-    display : block;
-    position : absolute;
-    float : top;
-    left : 50%;
-    transform : translate(-50%);  
-    font-size: 150px; 
+    color : rgb(255, 255, 255);
 }
 h2{ 
-    font-family :Verdana, Geneva, Tahoma, sans-serif;
-    color : rgb(167, 81, 11);
-    margin : 0;
-    position : absolute;
-    top : 80%;
-    left : 50%;
-    transform : translate(-50%,-20%);
-}
-.textdiv{
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    position : relative;
-    margin : auto;
-    height : 300px;
-    top : 50%;
-    left : 50%;
-    transform : translate(-50%,-50%);
+    color : rgb(255, 211, 144);
 }
 body {
-    background-color: rgb(255, 164, 103);
-}
-.topnav {
-    overflow: hidden;
-    float: right;
-    margin : 10px;
-  }
-  
+    background-image: url("Backgrounds/orange-darkorange.png");
+    background-attachment: fixed;
+}  
 .topnav a {
-    float: left;
-    color:rgb(167, 60, 11);
-    text-align: center;
-    padding: 20px 25px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-div.dd1{
-    width : 240px;
-    height : 180px;
-    background-color : rgb(144, 220, 255);
-    border: rgb(9, 6, 44) solid 1px;
-    margin : 20px;
-    position : absolute;
-    top : 30%;
-    left : 5%;
-    clear: left;
-    display : none;
+    color:rgb(255, 255, 255);
 }
-#phome{
-    color :rgb(255, 255, 255);
-    font-size: 22px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align : center;
+.navbar:hover{
+    background-color: rgb(255, 211, 144);
+    color : rgb(87, 44, 3);
 }
+.planet_div_text{
+    background-color : rgb(255, 211, 144);
+}
+.planet_text{
+    color :rgb(87, 44, 3);
+}
+#tButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 44, 3);
+    border :rgb(255, 255, 255) 2px solid;
+}
+

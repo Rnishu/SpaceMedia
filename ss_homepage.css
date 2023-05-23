@@ -1,0 +1,40 @@
+.planet_div_img{
+    z-index:101;
+  }
+.planet_div_text{
+    z-index:101;
+  }
+.textdiv{
+    z-index:101;
+}
+body{
+    margin : 0px;
+    padding : 0p;
+}
+  
+.object {
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    }
+.planet {
+  z-index: 100;
+}
+  
+#sun {
+    z-index: 40;
+    height: 30vmin;
+    width: 30vmin;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+}
+#earth {
+    height : 80px;
+    width : 80px;
+    top : 0;
+    left : 0;
+    bottom: 0;
+    right : 0;
+    
+}
