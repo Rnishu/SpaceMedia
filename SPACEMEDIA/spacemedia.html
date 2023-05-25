@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>spacemedia</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Homepage of spacemedia">
+        <meta name = "keywords" content = "HTML, CSS, Javascript, Spacemedia">
+        <meta name = "author" content = "Niya">
+        <meta name = "viewsport" conent = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="spacemedia(blue-darkblue).css">
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="ss_homepage.css">
+        <link rel="stylesheet" href="scroll_homepage.css">
+    </head>
+    <body>
+        <main>
+            <!--Header contains the navigation bar, it's fixed to the screen and has anchor tags to the about and contacts page-->
+        <header>    
+            <div class = "topnav">
+                <a href="#Home" class = "navbar">Home</a>
+                <a href="#About" class = "navbar">About</a>
+                <a href="#Contacts" class = "navbar">Contacts</a>
+            </div>
+        </header>
+        <!--Upper black Curve to make navigation bar look cool-->
+        <div class="spacer1 layer1"></div>
+        <!--This section contains the homepage, the headings and the mini version of the solar system
+        section class defines the height and alignment of content on home page-->
+        <div class="section" id="Home">
+            <div class="textdiv">
+                <h1 id="Home">SPACEMEDIA</h1>
+                <h2>Enjoy your Exploration</h2>
+            </div>
+        <!--Four planets(class = "planets_img") with text(class = "planets_text") boxes together in div(class = "planets")
+        they are animated to fade on load and contains kind of philosophical quotes-->
+            <div class = "planets">
+                <div class = "planet_div_img" id = "planet_1_div_img">
+                    <img  class = "planet_img" id = "planet_1_img" src = "Gradients\gradient1.png">
+                </div>
+                <div class = "planet_div_text" id ="planet_1_div_text">
+                    <p class = "planet_text" id = "planet_1_text">In the vastness of interstellar space, the free market thrives as the currency of ideas and exploration, and curiosity.</p>
+                </div>
+            </div>
+            <div class = "planets">
+                <div class = "planet_div_img" id = "planet_2_div_img">
+                    <img class = "planet_img" id = "planet_2_img" src = "Gradients\gradient2.png">
+                </div>
+                <div class = "planet_div_text" id ="planet_2_div_text">
+                    <p class = "planet_text" id = "planet_2_text"> The cosmic canvas where the stars of human connection, knowledge, and inspiration illuminate the vast expanse of shared experiences in the universe of digital space.</p>
+                </div>
+            </div>
+            <div class = "planets">
+                <div class = "planet_div_img" id = "planet_3_div_img">
+                    <img  class = "planet_img" id = "planet_3_img" src = "Gradients\gradient3.png">
+                </div>
+                <div class = "planet_div_text" id ="planet_3_div_text">
+                    <p class = "planet_text" id = "planet_3_text">The uncharted territories of interstellar space hold the promise of boundless opportunities for those who dare to venture beyond the known.</p>
+                </div>
+            </div>
+            <div class = "planets">
+                <div class = "planet_div_img" id = "planet_4_div_img">
+                    <img  class = "planet_img" id = "planet_4_img" src = "Gradients\gradient4.png">
+                </div>
+                <div class = "planet_div_text" id ="planet_4_div_text">
+                    <p class = "planet_text" id = "planet_4_text">Curious minds and exploration leads to innovation, a new opportunity to share and shape the space.</p>
+                </div>
+            </div>
+            <div>
+        <!--Solar system on homepage, overlapped by heading text-->
+                <img class="object sun" src="Gradients/homepage_sun.png" id="sun">
+                <img class="object homepage_planet_1 planet" src="Gradients/homepage_planet_1.png" id="earth">
+                <img class="object homepage_planet_2 planet" src="Gradients/homepage_planet_2.png" id="earth">
+            </div>
+        <!--A button that takes user to login page-->
+            <button class="home_button" id="login_button">Get Started!</button>
+            <button class="home_button" id="theme_change" onclick="theme_change()">Change theme</button>
+        </div>
+        <!--This section contains the about page and another miniature solar system, and this section is animated to slide in
+        from the left with fade effect.-->
+        <div class="section sectionHidden  iHidden" id="About">
+            <div class="textdiv">
+                <h1>About</h1>
+                <h2>Get to know us</h2>
+            </div>
+            <div>
+        <!--The solar system-->
+                <img class="object sun" src="Gradients/contacts_sun.png" id="sun">
+                <img class="object about_planet_1 planet" src="Gradients/about_planet_1.png" id="earth">
+                <img class="object about_planet_2 planet" src="Gradients/about_planet_2.png" id="earth">
+                <img class="object about_planet_1\3 planet" src="Gradients/about_planet_3.png" id="earth">
+            </div>
+        </div>
+        <!--This section contains the contacts page and another miniature solar system, and this section is animated to slide in
+        from the left with fade effect.-->
+        <div class="section sectionHidden iHidden" id="Contacts">
+            <div class="textdiv">
+                <h1>Contacts</h1>
+                <h2>Get in touch with us</h2>
+            </div>
+            <div>
+        <!--The solar system-->
+                <img class="object sun" src="Gradients/contacts_sun.png" id="sun">
+                <img class="object contacts_planet_1 planet" src="Gradients/contacts_planet_1.png" id="earth">
+                <img class="object contacts_planet_2 planet" src="Gradients/contacts_planet_2.png" id="earth">
+            </div>
+        </div>
+        <!--Waves before the footer-->
+        <div class = "spacer2 layer2"></div>
+        </main>
+            <script src="spacemedia(theme change).js"></script>
+            <script src="homepage.js"></script>
+            <script src="ss_homepage.js"></script>
+            <script src="scroll_homepage.js"></script>
+    </body>
+</html>
