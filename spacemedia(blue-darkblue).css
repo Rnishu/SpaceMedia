@@ -21,7 +21,7 @@ body {
 .planet_text{
     color :rgb(9, 6, 44);
 }
-#tButton{
+.home_button{
     color: rgb(255, 255, 255);
     background-color: rgb(9, 6, 44);
     border :rgb(255, 255, 255) 2px solid;
