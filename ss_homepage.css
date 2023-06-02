@@ -1,40 +1,32 @@
-.planet_div_img{
-    z-index:101;
-  }
-.planet_div_text{
-    z-index:101;
-  }
-.textdiv{
-    z-index:101;
-}
-body{
-    margin : 0px;
-    padding : 0p;
-}
-  
 .object {
     border-radius: 50%;
     position: absolute;
     margin: auto;
     }
+/*centers the planet rotation with keeping 
+all top, bottom, right, left 0. As js 
+changes these properties for motion, but it's slightly 
+out of symetry and center is a bit off*/
 .planet {
   z-index: 100;
-}
-  
-#sun {
+  position : absolute;
+  top : 0;
+  left : 0;
+  bottom : 0;
+  right : 0;
+} 
+.sun{
+    position : absolute;
     z-index: 40;
     height: 30vmin;
     width: 30vmin;
     top : 50%;
     left : 50%;
-    transform : translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-#earth {
-    height : 80px;
-    width : 80px;
-    top : 0;
-    left : 0;
-    bottom: 0;
-    right : 0;
-    
-}
+.home{
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+} 
