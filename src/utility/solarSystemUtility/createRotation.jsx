@@ -8,7 +8,7 @@ function createRotations(planetRef) {
   );
   const planetVelocity = Array.from(
     { length: numberOfPlanets },
-    () => Math.random() * (0.5 - 0.05) + 0.05
+    () => Math.random() * (0.2 - 0.05) + 0.05
   );
   const planetRadian = Array.from(
     { length: numberOfPlanets },

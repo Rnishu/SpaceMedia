@@ -4,7 +4,7 @@ import "../styles/hero.css";
 import CreateEntity from "../utility/solarSystemUtility/createEntity";
 import createRotations from "../utility/solarSystemUtility/createRotation";
 function Hero() {
-  const planetRef = [useRef(null),useRef(null), useRef(null)];
+  const planetRef = [useRef(null), useRef(null), useRef(null)];
   createRotations(planetRef);
   return (
     <>
@@ -49,6 +49,11 @@ function Hero() {
               <span className="head">SPACEMEDIA</span>
               <span className="quote">Enjoy your Exploration</span>
               <button>Get Started!</button>
+              <p>
+                Embark on a cosmic journey where connections transcend galaxies.
+                Explore the stars, connect with friends, and make the universe
+                your own on our space-themed social platform.
+              </p>
             </div>
           </div>
         </div>
@@ -58,4 +63,3 @@ function Hero() {
 }
 
 export default Hero;
-
