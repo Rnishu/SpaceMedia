@@ -1,3 +1,6 @@
+# SpaceMedia
+Social Media increasing space awareness runnning on a revenue model other than advertisements.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

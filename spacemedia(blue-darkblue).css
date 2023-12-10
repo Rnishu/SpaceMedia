@@ -1,0 +1,29 @@
+h1{ 
+    color : rgb(255, 255, 255);
+}
+h2{ 
+    color : rgb(144, 220, 255);
+}
+body {
+    background-image: url("Backgrounds/blue-darkblue.png");
+    background-attachment: fixed;
+} 
+.topnav a {
+    color: #ffffff;
+}
+.navbar:hover{
+    background-color: rgb(144, 220, 255);
+    color : rgb(9, 6, 44);
+}
+.planet_div_text{
+    background-color : rgb(144, 220, 255);
+}
+.planet_text{
+    color :rgb(9, 6, 44);
+}
+#tButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 6, 44);
+    border :rgb(255, 255, 255) 2px solid;
+}
+

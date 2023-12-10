@@ -1,0 +1,29 @@
+h1{ 
+    color : rgb(255, 255, 255);
+}
+h2{ 
+    color : rgb(255, 211, 144);
+}
+body {
+    background-image: url("Backgrounds/orange-darkorange.png");
+    background-attachment: fixed;
+}  
+.topnav a {
+    color:rgb(255, 255, 255);
+}
+.navbar:hover{
+    background-color: rgb(255, 211, 144);
+    color : rgb(87, 44, 3);
+}
+.planet_div_text{
+    background-color : rgb(255, 211, 144);
+}
+.planet_text{
+    color :rgb(87, 44, 3);
+}
+#tButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 44, 3);
+    border :rgb(255, 255, 255) 2px solid;
+}
+
