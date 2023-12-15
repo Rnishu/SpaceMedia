@@ -1,12 +1,34 @@
-import './App.css'
-import Hero from './components/hero'
+import "./App.css";
+import NavBar from "./components/navbar";
+import Learn from "./components/learn";
+import About from "./components/about";
+import Docs from "./components/docs";
+import Hero from "./components/hero";
+import Footer from "./components/footer";
+import Home from "./components/home";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Hero/>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route path="/">
+            <Hero />
+            <Learn />
+            <Docs />
+            <About />
+            <Footer />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -25,6 +25,10 @@
     padding: 0px 50px;
     margin: 3vh 20px;
   }
+  .navbar .list-element button{
+    background: none;
+    border: none;
+  }
   .list-element a:hover {
     text-decoration: underline;
   }

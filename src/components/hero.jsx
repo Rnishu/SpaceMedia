@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import NavBar from "./navbar";
+import React, { useRef } from "react";
 import "../styles/hero.css";
 import CreateEntity from "../utility/solarSystemUtility/createEntity";
 import createRotations from "../utility/solarSystemUtility/createRotation";
@@ -8,7 +7,6 @@ function Hero() {
   createRotations(planetRef);
   return (
     <>
-      <NavBar style={{ position: "sticky" }} />
       <div className="section" id="hero">
         <div className="galaxy galaxy-one">
           {<CreateEntity className="galaxyOne" dim="30vw" ref={null} />}
@@ -19,7 +17,15 @@ function Hero() {
         <div className="galaxy galaxy-three">
           {<CreateEntity className="galaxyThree" dim="20vw" ref={null} />}
         </div>
-        <div className="super-container">
+        <div className="text-fields section-col">
+          <div className="containers">
+            <div className="head">Create your own Solar System</div>
+            <div className="sub-head">Become a Type 1 civilization</div>
+            <div className="paragraph">On our platform every user advances as a civilization, join interplanetary groups, explore space, collect resorces, build technology, and much more!</div>
+          </div>
+          <div className="containers"></div>
+        </div>
+        <div className="solar-container section-col">
           <div className="solarSystem">
             {<CreateEntity className="sun" dim="15vw" />}
             {
@@ -56,6 +62,10 @@ function Hero() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="text-fields section-col">
+          <div className="containers"></div>
+          <div className="containers"></div>
         </div>
       </div>
     </>
