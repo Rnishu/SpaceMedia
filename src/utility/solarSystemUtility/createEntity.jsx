@@ -21,14 +21,14 @@ const CreateEntity = forwardRef((props, ref) => {
     let lightness = 0;
     if((props.className).includes('sun')){
       //color constraints for sun
-      hue = Math.floor(Math.random()*21)+40; //range 0-60
+      hue = Math.floor(Math.random()*21)+40; //range 40-60
       saturation = Math.floor(Math.random()*21)+80; //range 80-100
       lightness = Math.floor(Math.random()*21)+40; //range 40-60
     }else{
       //color contraints for planet
       hue = Math.floor(Math.random()*360); //range 0-360
       saturation = Math.floor(Math.random()*50)+49; //range 50-100
-      lightness = Math.floor(Math.random()*21)+70; //range 0-100
+      lightness = Math.floor(Math.random()*21)+40; //range 40-60
     }
     //return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     return `hsl(${hue}, ${saturation}%, ${lightness}%)`;

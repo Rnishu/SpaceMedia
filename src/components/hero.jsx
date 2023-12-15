@@ -1,10 +1,15 @@
 import React, { useRef } from "react";
+import { useHistory } from "react-router-dom";
 import "../styles/hero.css";
 import CreateEntity from "../utility/solarSystemUtility/createEntity";
 import createRotations from "../utility/solarSystemUtility/createRotation";
 function Hero() {
   const planetRef = [useRef(null), useRef(null), useRef(null)];
+  const history = useHistory();
   createRotations(planetRef);
+  const handleGetStarted = ()=>{
+    history.push('/home');
+  }
   return (
     <>
       <div className="section" id="hero">
@@ -17,14 +22,18 @@ function Hero() {
         <div className="galaxy galaxy-three">
           {<CreateEntity className="galaxyThree" dim="20vw" ref={null} />}
         </div>
-        <div className="text-fields section-col">
-          <div className="containers">
+        {/* <div className="text-fields section-col">
+          <div className="containers light">
             <div className="head">Create your own Solar System</div>
             <div className="sub-head">Become a Type 1 civilization</div>
             <div className="paragraph">On our platform every user advances as a civilization, join interplanetary groups, explore space, collect resorces, build technology, and much more!</div>
           </div>
-          <div className="containers"></div>
-        </div>
+          <div className="containers dark">
+          <div className="head">Create your own Solar System</div>
+            <div className="sub-head">Become a Type 1 civilization</div>
+            <div className="paragraph">On our platform every user advances as a civilization, join interplanetary groups, explore space, collect resorces, build technology, and much more!</div>
+          </div>
+        </div> */}
         <div className="solar-container section-col">
           <div className="solarSystem">
             {<CreateEntity className="sun" dim="15vw" />}
@@ -54,7 +63,7 @@ function Hero() {
             <div className="flex-container">
               <span className="head">SPACEMEDIA</span>
               <span className="quote">Enjoy your Exploration</span>
-              <button>Get Started!</button>
+              <button onClick={handleGetStarted}>Get Started!</button>
               <p>
                 Embark on a cosmic journey where connections transcend galaxies.
                 Explore the stars, connect with friends, and make the universe
@@ -63,10 +72,10 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="text-fields section-col">
+        {/* <div className="text-fields section-col">
           <div className="containers"></div>
           <div className="containers"></div>
-        </div>
+        </div> */}
       </div>
     </>
   );

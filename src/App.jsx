@@ -6,8 +6,7 @@ import Docs from "./components/docs";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
 import Home from "./components/home";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Hero />
             <Learn />
             <Docs />

@@ -1,6 +1,9 @@
 :root {
   --off-white-transparent: #efefef2a;
+  --off-dark-transparent: #2c2c2cd7;
   --off-white: #efefef;
+  --off-white-transparent-less: #efefefb4;
+  --less-contrast-white: #cccccc;
   --transparent: #ffffff00;
   --bg-color: #04071d;
 }
@@ -13,6 +16,7 @@
   width: 100vw;
   position: relative;
 }
+/* }
 .section-col:nth-child(4) {
   margin-left: 0;
   margin-right: 5vw;
@@ -33,7 +37,7 @@
 .section-col {
   display: flex;
   flex-direction: column;
-}
+} */
 /*solar container*/
 .solar-container {
   position: relative;
@@ -90,7 +94,7 @@
   color: var(--bg-color);
 }
 .flex-container button:active {
-  background-color: var(--off-white-transparent);
+  background-color: var(--off-white-transparent-less);
   border: none;
 }
 /*background galaxies*/
@@ -136,12 +140,18 @@
   flex-direction: column;
 }
 .containers {
-  color: white;
+  color: var(--less-contrast-white);
   text-align: left;
-  background-color: var(--off-white-transparent);
   border-radius: 15px;
-  box-shadow: 0 0 1vw var(--off-white-transparent);
   padding: 1.2vw;
+}
+.light{
+  background-color: var(--off-white-transparent);
+  box-shadow: 0 0 1vw var(--off-white-transparent);
+}
+.dark{
+  background-color: var(--off-dark-transparent);
+  box-shadow: 0 0 1vw var(--off-dark-transparent);
 }
 .containers > *{
     padding: 0.2vw;
@@ -159,7 +169,7 @@
   margin-bottom: 33vh;
 }
 .containers:last-child {
-  margin-top: 33vh;
+  margin-top: 11vh;
 }
 /* .col .containers{
     border: 1px solid white;
