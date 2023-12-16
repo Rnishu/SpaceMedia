@@ -1,14 +1,14 @@
 import React, { useRef } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/hero.css";
 import CreateEntity from "../utility/solarSystemUtility/createEntity";
 import createRotations from "../utility/solarSystemUtility/createRotation";
 function Hero() {
   const planetRef = [useRef(null), useRef(null), useRef(null)];
-  const history = useHistory();
+  const navigate = useNavigate();
   createRotations(planetRef);
   const handleGetStarted = ()=>{
-    history.push('/home');
+    navigate('/home');
   }
   return (
     <>

@@ -1,12 +1,3 @@
-:root {
-  --off-white-transparent: #efefef2a;
-  --off-dark-transparent: #2c2c2cd7;
-  --off-white: #efefef;
-  --off-white-transparent-less: #efefefb4;
-  --less-contrast-white: #cccccc;
-  --transparent: #ffffff00;
-  --bg-color: #04071d;
-}
 .section {
   display: flex;
   flex-direction: row;
