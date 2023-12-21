@@ -18,7 +18,7 @@ function rotate(refArray, planetRadius, planetVelocity, planetRadian) {
             if (planetRadian[index] % (2 * Math.PI) <= Math.PI) {
               planetElement.style.zIndex = 4;
             } else {
-              planetElement.style.zIndex = -1;
+              planetElement.style.zIndex = 1;
             }
           }
         }

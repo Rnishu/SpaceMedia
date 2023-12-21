@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/hero.css";
+import "../styles/landing-styles/hero.css";
 import CreateEntity from "../utility/solarSystemUtility/createEntity";
 import createRotations from "../utility/solarSystemUtility/createRotation";
 function Hero() {

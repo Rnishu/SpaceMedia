@@ -2,7 +2,7 @@
     position: fixed;
     overflow: none;
     width: 100vw;
-    height: 8vh;
+    height: 7vh;
     z-index: 99;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(0, 0, 0, 0.027) 100%);
@@ -16,14 +16,14 @@
   .navbar .unordered-list {
     list-style-type: none;
     width: 100vw;
-    height: 3vh;
+    height: 2vh;
     display: flex;
     justify-content: center;
     position: absolute;
   }
   .navbar .unordered-list .list-element {
     padding: 0px 50px;
-    margin: 3vh 20px;
+    margin: 2vh 20px;
   }
   .navbar .list-element button{
     background: none;
@@ -35,5 +35,5 @@
   .list-element a {
     color: rgba(255, 255, 255, 0.774);
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 0.7vw;
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/navbar.css";
+import "../styles/landing-styles/navbar.css";
 import { Link as ScrollLink } from "react-scroll";
 function NavBar() {
   return (
