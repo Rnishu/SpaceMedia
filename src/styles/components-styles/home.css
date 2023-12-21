@@ -1,0 +1,27 @@
+.home{
+    background-image: url("../../assets/3a8b1c63b9b4d2c86d92169c75319d8a.jpg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .super-container{
+    display: flex;
+    flex-direction: row;
+}
+.tree{
+    height: 100vh;
+    width: auto;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.col:first-child{
+    flex-grow: 1;
+}
+.col:nth-child(2){
+    flex-grow: 2;
+}
+.col:last-child{
+    flex-grow: 1;
+}

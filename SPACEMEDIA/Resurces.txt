@@ -1,3 +1,0 @@
-background image - "https://images.wallpaperscraft.com/image/single/nebula_sparkles_shine_148804_3840x2160.jpg"
-blue-darkblue - rgb(9,6,44); #09062C
-darkgreen-green - rgb(160, 253, 183); 
